@@ -9,7 +9,7 @@
 Summary:	GLib/GObject wrapper for the Facebook Graph API
 Name:		gfbgraph
 Version:	0.2.2
-Release:	%mkrel 1
+Release:	1
 Epoch:		1
 Group:		System/Libraries
 License:	LGPLv2
@@ -82,10 +82,4 @@ rm -f %{buildroot}%{_libdir}/*.la
 
 %files -n %{gi_name}
 %{_libdir}/girepository-1.0/GFBGraph-%{api_version}.typelib
-
-
-%changelog
-* Wed Feb 05 2014 ovitters <ovitters> 1:0.2.2-1.mga5
-+ Revision: 583861
-- imported package gfbgraph
 
