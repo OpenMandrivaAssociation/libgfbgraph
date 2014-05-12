@@ -26,15 +26,16 @@ BuildRequires:	gtk-doc
 BuildRequires:	intltool
 
 %description
-GLib/GObject wrapper for the Facebook Graph API that integrates with GNOME Online Accounts.
-
+GLib/GObject wrapper for the Facebook Graph API that integrates with GNOME
+Online Accounts.
 
 %package -n %{lib_name}
 Summary:  %{summary}
 Group: %{group}
 
 %description -n %{lib_name}
-GLib/GObject wrapper for the Facebook Graph API that integrates with GNOME Online Accounts.
+GLib/GObject wrapper for the Facebook Graph API that integrates with GNOME
+Online Accounts.
 
 %package -n %develname
 Summary: Support files necessary to compile applications with %{name}
