@@ -9,7 +9,7 @@
 Summary:	GLib/GObject wrapper for the Facebook Graph API
 Name:		gfbgraph
 Version:	0.2.2
-Release:	%mkrel 1
+Release:	1
 Epoch:		1
 Group:		System/Libraries
 License:	LGPLv2
@@ -26,7 +26,8 @@ BuildRequires:	gtk-doc
 BuildRequires:	intltool
 
 %description
-GLib/GObject wrapper for the Facebook Graph API that integrates with GNOME Online Accounts.
+GLib/GObject wrapper for the Facebook Graph API that integrates with
+GNOME Online Accounts.
 
 
 %package -n %{lib_name}
@@ -34,7 +35,8 @@ Summary:  %{summary}
 Group: %{group}
 
 %description -n %{lib_name}
-GLib/GObject wrapper for the Facebook Graph API that integrates with GNOME Online Accounts.
+GLib/GObject wrapper for the Facebook Graph API that integrates with
+GNOME Online Accounts.
 
 %package -n %develname
 Summary: Support files necessary to compile applications with %{name}
@@ -59,7 +61,7 @@ GObject Introspection interface library for %{name}.
 %setup -q
 
 %build
-%configure2_5x --enable-gtk-doc --disable-static --enable-introspection
+%configure --enable-gtk-doc --enable-introspection
 %make
 
 %install
@@ -82,10 +84,4 @@ rm -f %{buildroot}%{_libdir}/*.la
 
 %files -n %{gi_name}
 %{_libdir}/girepository-1.0/GFBGraph-%{api_version}.typelib
-
-
-%changelog
-* Wed Feb 05 2014 ovitters <ovitters> 1:0.2.2-1.mga5
-+ Revision: 583861
-- imported package gfbgraph
 
