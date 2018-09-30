@@ -75,7 +75,7 @@ rm -f %{buildroot}%{_libdir}/*.la
 %{_libdir}/lib%{name}*-%{api_version}.so.%{lib_major}*
 
 %files -n %develname
-#doc %{_datadir}/gtk-doc/html/%{name}
+%doc %{_datadir}/gtk-doc/html/%{name}*
 %{_datadir}/gir-1.0/GFBGraph-%{api_version}.gir
 %{_libdir}/*.so
 %{_includedir}/*
