@@ -8,9 +8,8 @@
 
 Summary:	GLib/GObject wrapper for the Facebook Graph API
 Name:		gfbgraph
-Version:	0.2.2
-Release:	2
-Epoch:		1
+Version:	0.2.3
+Release:	1
 Group:		System/Libraries
 License:	LGPLv2
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
@@ -41,9 +40,9 @@ GNOME Online Accounts.
 %package -n %develname
 Summary: Support files necessary to compile applications with %{name}
 Group: Development/C
-Requires: %{lib_name} = %epoch:%{version}
-Provides: %{name}-%{api_version}-devel = %epoch:%{version}-%{release}
-Provides: %{name}-devel = %epoch:%{version}-%{release}
+Requires: %{lib_name} = %{version}
+Provides: %{name}-%{api_version}-devel = %{version}-%{release}
+Provides: %{name}-devel = %{version}-%{release}
 
 %description -n %develname
 Libraries, headers, and support files necessary to compile
@@ -52,7 +51,7 @@ applications using %{name}.
 %package -n %{gi_name}
 Summary:	GObject Introspection interface library for %{name}
 Group:		System/Libraries
-Requires:	%{lib_name} = %epoch:%{version}-%{release}
+Requires:	%{lib_name} = %{version}-%{release}
 
 %description -n %{gi_name}
 GObject Introspection interface library for %{name}.
@@ -76,7 +75,7 @@ rm -f %{buildroot}%{_libdir}/*.la
 %{_libdir}/lib%{name}*-%{api_version}.so.%{lib_major}*
 
 %files -n %develname
-%doc %{_datadir}/gtk-doc/html/%{name}
+%doc %{_datadir}/gtk-doc/html/%{name}*
 %{_datadir}/gir-1.0/GFBGraph-%{api_version}.gir
 %{_libdir}/*.so
 %{_includedir}/*
