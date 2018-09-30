@@ -40,9 +40,9 @@ GNOME Online Accounts.
 %package -n %develname
 Summary: Support files necessary to compile applications with %{name}
 Group: Development/C
-Requires: %{lib_name} = %epoch:%{version}
-Provides: %{name}-%{api_version}-devel = %epoch:%{version}-%{release}
-Provides: %{name}-devel = %epoch:%{version}-%{release}
+Requires: %{lib_name} = %{version}
+Provides: %{name}-%{api_version}-devel = %{version}-%{release}
+Provides: %{name}-devel = %{version}-%{release}
 
 %description -n %develname
 Libraries, headers, and support files necessary to compile
@@ -51,7 +51,7 @@ applications using %{name}.
 %package -n %{gi_name}
 Summary:	GObject Introspection interface library for %{name}
 Group:		System/Libraries
-Requires:	%{lib_name} = %epoch:%{version}-%{release}
+Requires:	%{lib_name} = %{version}-%{release}
 
 %description -n %{gi_name}
 GObject Introspection interface library for %{name}.
