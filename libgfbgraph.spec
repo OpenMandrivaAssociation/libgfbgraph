@@ -9,7 +9,7 @@
 Summary:	GLib/GObject wrapper for the Facebook Graph API
 Name:		gfbgraph
 Version:	0.2.3
-Release:	1
+Release:	2
 Group:		System/Libraries
 License:	LGPLv2
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
