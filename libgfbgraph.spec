@@ -40,7 +40,7 @@ GNOME Online Accounts.
 %package -n %develname
 Summary: Support files necessary to compile applications with %{name}
 Group: Development/C
-Requires: %{lib_name} = %{version}-%{release}
+Requires: %{lib_name}
 Provides: %{name}-%{api_version}-devel = %{version}-%{release}
 Provides: %{name}-devel = %{version}-%{release}
 
@@ -61,10 +61,10 @@ GObject Introspection interface library for %{name}.
 
 %build
 %configure --enable-gtk-doc --enable-introspection
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # remove unpackaged files
 rm -rf $RPM_BUILD_ROOT%{_datadir}/../doc/lib%{name}
