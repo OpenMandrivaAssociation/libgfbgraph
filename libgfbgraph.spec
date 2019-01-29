@@ -52,7 +52,7 @@ applications using %{name}.
 %package -n %{gi_name}
 Summary:	GObject Introspection interface library for %{name}
 Group:		System/Libraries
-Requires:	%{lib_name} = %{version}-%{release}
+Requires:	%{lib_name}
 
 %description -n %{gi_name}
 GObject Introspection interface library for %{name}.
