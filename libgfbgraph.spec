@@ -8,8 +8,8 @@
 
 Summary:	GLib/GObject wrapper for the Facebook Graph API
 Name:		gfbgraph
-Version:	0.2.3
-Release:	4
+Version:	0.2.4
+Release:	1
 Epoch:  1
 Group:		System/Libraries
 License:	LGPLv2
@@ -84,4 +84,3 @@ rm -f %{buildroot}%{_libdir}/*.la
 
 %files -n %{gi_name}
 %{_libdir}/girepository-1.0/GFBGraph-%{api_version}.typelib
-
