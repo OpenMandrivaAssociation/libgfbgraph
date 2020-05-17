@@ -61,7 +61,7 @@ GObject Introspection interface library for %{name}.
 %setup -q
 
 %build
-%configure --enable-gtk-doc --enable-introspection
+%configure --enable-introspection
 %make_build
 
 %install
