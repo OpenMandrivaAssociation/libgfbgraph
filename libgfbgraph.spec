@@ -62,6 +62,7 @@ GObject Introspection interface library for %{name}.
 %setup -q
 
 %build
+./autogen.sh
 %configure --enable-gtk-doc --disable-static --enable-introspection
 %make_build
 
