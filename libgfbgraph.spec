@@ -14,6 +14,7 @@ Epoch:  1
 Group:		System/Libraries
 License:	LGPLv2
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.16.0
 BuildRequires:	pkgconfig(gobject-2.0) >= 2.16.0
@@ -61,7 +62,7 @@ GObject Introspection interface library for %{name}.
 %setup -q
 
 %build
-%configure --enable-introspection
+%configure --enable-gtk-doc --disable-static --enable-introspection
 %make_build
 
 %install
