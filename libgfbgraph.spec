@@ -8,7 +8,7 @@
 
 Summary:	GLib/GObject wrapper for the Facebook Graph API
 Name:		gfbgraph
-Version:	0.2.4
+Version:	0.2.5
 Release:	1
 Epoch:  1
 Group:		System/Libraries
