@@ -15,6 +15,11 @@ Group:		System/Libraries
 License:	LGPLv2
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.16.0
 BuildRequires:	pkgconfig(gobject-2.0) >= 2.16.0
